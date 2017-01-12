@@ -1,0 +1,14 @@
+// Mixin for FontSquirrel
+@mixin fontsquirrel-face($family, $weight: normal, $style: normal) {
+    @font-face {
+        font-family: quote($family);
+        src: url('../fonts/#{$family}/#{$family}-webfont.eot');
+        src: url('../fonts/#{$family}/#{$family}-webfont.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/#{$family}/#{$family}-webfont.woff2') format('woff2'),
+             url('../fonts/#{$family}/#{$family}-webfont.woff') format('woff'),
+             url('../fonts/#{$family}/#{$family}-webfont.ttf') format('truetype'),
+             url('../fonts/#{$family}/#{$family}-webfont.svg##{$family}') format('svg');
+        font-weight: $weight;
+        font-style: $style;
+    }
+}

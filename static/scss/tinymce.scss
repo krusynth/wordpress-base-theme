@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+// Import mixins
+@import 'mixins/web-fonts';
+@import 'mixins/fontsquirrel';
+
+// Import modules
+@import 'modules/global';
+@import 'modules/typography';
+@import 'modules/colors';
+
+// add a little label to the editor.
+@mixin editor-label($text) {
+  border: 2px solid #666;
+  border-radius: 4px;
+  padding: 5px;
+  margin-top: 10px;
+
+  &:before {
+    font-size: 11px;
+    color: $white;
+    background-color: $grey;
+    padding: 0 4px;
+    border: 1px solid $black;
+    position: relative;
+    float: right;
+    right: 5px;
+    top: -15px;
+    content: $text;
+  }
+}
+
+body#tinymce.wp-editor {
+  // @import "shared-content";
+
+  .homeFeatures {
+    @include editor-label("Feature");
+  }
+
+  .column-3-4 {
+    @include editor-label("3/4 Column");
+  }
+  .column-1-4 {
+    @include editor-label("1/4 Column");
+  }
+  .column-1-2 {
+    @include editor-label("1/2 Column");
+  }
+  .column-2-3 {
+    @include editor-label("2/3 Column");
+  }
+  .column-1-3 {
+    @include editor-label("1/3 Column");
+  }
+}

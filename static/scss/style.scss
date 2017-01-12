@@ -1,0 +1,27 @@
+@charset "utf-8";
+// Core styles
+
+// Import mixins
+@import 'mixins/web-fonts';
+@import 'mixins/fontsquirrel';
+
+// Import modules
+@import 'modules/global';
+@import 'modules/typography';
+@import 'modules/colors';
+@import 'modules/bootstrap';
+@import 'modules/font-awesome';
+
+// Import partials styles
+@import 'partials/general';
+@import 'partials/animation';
+@import 'partials/header';
+@import 'partials/footer';
+@import 'partials/sidebar';
+@import 'partials/content';
+@import 'partials/lists';
+@import 'partials/forms';
+
+// Import page-specific styles
+// @import 'pages/home';
+// @import 'pages/documents';

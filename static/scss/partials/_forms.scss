@@ -1,0 +1,11 @@
+input[type=text],
+input[type=search],
+input[type=email],
+textarea {
+  @extend .form-control;
+}
+
+input[type=submit], button {
+  @extend .btn;
+  @extend .btn-primary;
+}

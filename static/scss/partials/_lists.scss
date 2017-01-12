@@ -1,0 +1,8 @@
+.list {
+  @extend .table;
+  @extend .table-striped;
+}
+
+.actions-column {
+  width: 30%;
+}

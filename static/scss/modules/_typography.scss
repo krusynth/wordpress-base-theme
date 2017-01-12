@@ -1,0 +1,41 @@
+// Typography base
+
+@include web-fonts(
+	("lato": ("400", "400 italic", "700", "700 italic")),
+	("libre baskerville": ("400", "400 italic", "700", "700 italic"))
+);
+
+// @include fontsquirrel-face('fontname', 'normal');
+
+$font-family-sans-serif: "Lato", Arial, Helvetica, sans-serif;
+$font-family-serif: "Liber Baskerville", Baskerville, Garamond, Times, "Times New Roman", Georgia, serif;
+// $font-family-monospace:      Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$font-family-base: $font-family-sans-serif;
+
+%title {
+	font-family: $font-family-sans-serif;
+}
+
+%subtitle {
+	font-family: $font-family-serif;
+}
+
+h1 {
+  @extend %title;
+}
+
+h2 {
+  @extend %subtitle;
+}
+
+h3, h4, h5, h6 {
+  @extend %title;
+}
+
+// $body-font-size: 1rem;
+// $body-line-height: 1.375;
+
+// $font-size-base: $body-font-size;
+// $line-height: $body-line-height;
+
+// $footer-font-size: 1rem;

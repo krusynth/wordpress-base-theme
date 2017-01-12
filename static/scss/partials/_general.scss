@@ -1,0 +1,31 @@
+// Shared styles
+a {
+  text-decoration: none;
+
+  &:hover, &:active {
+    text-decoration: underline;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-serif;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+// Sometimes, we want to have titles visible only to screen readers.
+.screen-hidden {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
+
+// Wordpress has its own built-in name for this.
+.screen-reader-text {
+  @extend .screen-hidden;
+}

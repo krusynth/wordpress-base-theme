@@ -1,0 +1,23 @@
+.footer {
+  background-color: $light-grey;
+  border-top: 1px solid $grey;
+
+  color: $mid-grey;
+  margin-top: 2rem;
+  padding: 2rem 0;
+  .footer-content {
+    @extend .container;
+  }
+
+  .widget:last-child {
+    margin-bottom: 0;
+  }
+
+  a {
+    color: $mid-grey;
+
+    &:hover, &:active {
+      color: $mid-grey;
+    }
+  }
+}
