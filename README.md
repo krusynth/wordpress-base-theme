@@ -1,6 +1,10 @@
 # wordpress-base-theme
 My generic wordpress starter theme.
 
+# Usage
+
+The css files are built using [compass](http://compass-style.org/).
+
 # License
 
 This project is MIT licensed.
